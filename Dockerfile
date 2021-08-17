@@ -1,7 +1,7 @@
 FROM webhippie/golang:1.16 AS build
 
 # renovate: datasource=github-tags depName=minio/mc
-ENV MC_VERSION=
+ENV MC_VERSION=RELEASE.2021-07-27T06-46-19Z
 
 RUN git clone -b ${MC_VERSION} https://github.com/minio/mc.git /srv/app/src && \
   cd /srv/app/src && \

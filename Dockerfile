@@ -1,4 +1,4 @@
-FROM webhippie/golang:1.17 AS build
+FROM webhippie/golang:1.18 AS build
 
 # renovate: datasource=github-tags depName=minio/mc
 ENV MC_VERSION=RELEASE.2021-07-27T06-46-19Z

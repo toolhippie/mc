@@ -3,10 +3,12 @@
     "extends": [
         "github>webhippie/renovate:docker"
     ],
-    "packageRules": [{
-        "groupName": "mc packages",
-        "matchDatasources": [
-            "github-tags"
-        ]
-    }]
+    "packageRules": [
+        {
+            "groupName": "mc packages",
+            "matchDatasources": [
+                "github-tags"
+            ]
+        }
+    ]
 }

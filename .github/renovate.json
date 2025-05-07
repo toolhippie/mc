@@ -5,15 +5,14 @@
     ],
     "packageRules": [
         {
+            "matchDatasources": [
+                "github-tags"
+            ],
             "matchPackageNames": [
                 "minio/mc"
             ],
-            "matchUpdateTypes": [
-                "minor",
-                "patch",
-                "major"
-            ],
-            "versioning": "regex:^RELEASE\\.(?<major>\\d{8})T(?<minor>\\d{2})-(?<patch>\\d{2})-\\d{2}Z$"
+            "versioning": "regex:^RELEASE\\.(?<major>\\d{8})T(?<minor>\\d{2})-(?<patch>\\d{2})-(?<build>\\d{2})Z$",
+            "extractVersion": "^RELEASE\\.(\\d{4}-\\d{2}-\\d{2}T\\d{2}-\\d{2}-\\d{2}Z)$"
         }
     ]
 }

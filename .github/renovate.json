@@ -2,5 +2,14 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "github>toolhippie/.github//renovate/preset"
+    ],
+    "packageRules": [
+        {
+            "matchPackageNames": [
+                "minio/mc"
+            ],
+            "versioning": "regex:^RELEASE\\.(\\d{4}-\\d{2}-\\d{2}T\\d{2}-\\d{2}-\\d{2}Z)$",
+            "extractVersion": "^RELEASE\\.(?<version>\\d{4}-\\d{2}-\\d{2}T\\d{2}-\\d{2}-\\d{2}Z)$"
+        }
     ]
 }

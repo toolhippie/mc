@@ -11,8 +11,11 @@
             "matchPackageNames": [
                 "minio/mc"
             ],
+            "matchFileNames": [
+                "Dockerfile"
+            ],
             "versioning": "regex:^RELEASE\\.(?<major>\\d{8})T(?<minor>\\d{2})-(?<patch>\\d{2})-(?<build>\\d{2})Z$",
-            "extractVersion": "^RELEASE\\.(\\d{4}-\\d{2}-\\d{2}T\\d{2}-\\d{2}-\\d{2}Z)$"
+            "extractVersion": "^RELEASE\\.(?<version>\\d{4}-\\d{2}-\\d{2}T\\d{2}-\\d{2}-\\d{2}Z)$"
         }
     ]
 }

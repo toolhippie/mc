@@ -1,7 +1,7 @@
 FROM ghcr.io/dockhippie/golang:1.23 AS build
 
 # renovate: datasource=github-tags depName=minio/mc
-ENV MC_VERSION=RELEASE.2023-07-21T20-44-27Z
+ENV MC_VERSION=RELEASE.2025-04-16T18-13-26Z
 
 RUN git clone -b ${MC_VERSION} https://github.com/minio/mc.git /srv/app/src && \
   cd /srv/app/src && \

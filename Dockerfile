@@ -1,4 +1,4 @@
-FROM ghcr.io/dockhippie/golang:1.25@sha256:b8e12b832ff876553612e51390b25884f72879ed736193246b5b9a8fb0242352 AS build
+FROM ghcr.io/dockhippie/golang:1.25@sha256:f0d59ac761969fa7c8c1bb553b6b0acc2278df4c9d1ab2a1521e6a7fe1340553 AS build
 
 # renovate: datasource=github-tags depName=minio/mc
 ENV MC_VERSION=RELEASE.2025-04-16T18-13-26Z

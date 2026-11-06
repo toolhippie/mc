@@ -7,7 +7,7 @@ RUN git clone -b ${MC_VERSION} https://github.com/minio/mc.git /srv/app/src && \
   cd /srv/app/src && \
   GO111MODULE=on go install -ldflags "$(go run buildscripts/gen-ldflags.go)"
 
-FROM ghcr.io/dockhippie/alpine:3.23@sha256:1194c744e2b2a03ecb3214aecb89005830fa422b4a8f84cd12951d6d29df7a4c
+FROM ghcr.io/dockhippie/alpine:3.23@sha256:a95a9a4236d9d8ea9250ac367ab8d83b161493788c5e05394c74ac5c95320875
 ENTRYPOINT [""]
 
 RUN apk update && \
